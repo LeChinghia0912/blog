@@ -1,0 +1,26 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">stt</th>
+      <th scope="col">Tên </th>
+      <th scope="col">Địa chỉ</th>
+      <th scope="col">Điện thoại</th>
+      <th scope="col">Giờ mở cửa</th>
+      <th scope="col">loại bệnh viện</th>  
+      <th scope="col">Chi tiết</th>  
+    </tr>
+  </thead>
+  <tbody>
+     {{#each cosotyte}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.address}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.time}}</td>
+      <td>{{this.typeHospital}}</td>
+      <td>{{this.desc}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

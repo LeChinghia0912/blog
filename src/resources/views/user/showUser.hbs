@@ -1,0 +1,29 @@
+<div class="mt-4">
+    <h2>Danh Sách Người Dùng</h2>
+    <a type="submit" href="/user/createUser" class="btn btn-primary">Thêm Người dùng</a>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên </th>
+                <th scope="col">Số điện thoại</th>
+                <th scope="col">Email</th>
+                <th scope="col">Địa chỉ</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each users}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.name}}</td>
+                <td>{{this.phone}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.address}}</td>
+                
+            </tr>
+            {{/each}}
+
+        </tbody>
+</table>
+</div>
