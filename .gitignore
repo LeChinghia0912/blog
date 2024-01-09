@@ -1,3 +1,5 @@
-.vscode
-src/public/css
-/node_module/
+/node_modules
+/vendor
+/.idea
+.idea/
+.env
